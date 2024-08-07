@@ -102,6 +102,8 @@ type ListDepartmentResponseItem struct {
 	ParentID int `json:"parentid"`
 	// Order 在父部门中的次序值。order值大的排序靠前。值范围是[0, 2^32)
 	Order int `json:"order"`
+	// 部门领导
+	DepartmentLeader []string `json:"department_leader"`
 }
 
 // LinkSimpleListUserResponseItem is item model of LinkSimpleListUserResponse.UserList
